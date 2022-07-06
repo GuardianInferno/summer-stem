@@ -1,7 +1,9 @@
 <script setup>
+import Market from '../components/Market.vue';
 </script>
 
 <template>
-  <main>
+  <main class="screen">
+    <Market/>
   </main>
 </template>
