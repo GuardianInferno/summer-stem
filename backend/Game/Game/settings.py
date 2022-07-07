@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'product',
     'djoser',
     'accounts',
+    'userData',
 ]
 
 CORS_ALLOWED_ORIGINS = [
