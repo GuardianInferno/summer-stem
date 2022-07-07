@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "pinia": "^2.0.14",
+    "v-drag": "^3.0.7",
     "vue": "^3.2.37",
     "vue-router": "^4.0.16"
   },

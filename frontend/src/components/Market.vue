@@ -3,8 +3,8 @@ import Handle from './Handle.vue';
 </script>
 
 <template>
-<div class="market-view">
-  <Handle/>
+<div class="market-view" v-drag="'.handle'">
+  <Handle class="handle"/>
 </div>
 </template>
 
