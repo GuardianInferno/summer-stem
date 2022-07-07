@@ -110,6 +110,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
+
+DJOSER = {
+    "USER_ID_FIELD": "username"
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
