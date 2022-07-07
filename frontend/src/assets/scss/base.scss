@@ -1,4 +1,10 @@
 html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+html,
 body,
 * {
   box-sizing: border-box;
@@ -10,10 +16,13 @@ body {
   min-height: 100vh;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: "Verdana",
+  /* font-family: "Verdana",
     "Arial",
     "Helvetica",
-    sans-serif;
+    sans-serif; */
+  background-color: $nickel;
+  color: $black;
+  font-family: monospace;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
