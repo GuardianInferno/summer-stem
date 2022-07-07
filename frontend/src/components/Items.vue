@@ -7,7 +7,7 @@
 
 <style lang="scss">
 .bag {
-  border: 1px solid $foreground;
+  border: 1px solid $red;
   padding: 1rem;
   p {
     font-size: 1.5rem;

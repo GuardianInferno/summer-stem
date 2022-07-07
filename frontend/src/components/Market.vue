@@ -1,13 +1,17 @@
+<script setup>
+import Handle from './Handle.vue';
+</script>
+
 <template>
 <div class="market-view">
-Insert Plotly Graph here
+  <Handle/>
 </div>
 </template>
 
 <style lang="scss">
 .market-view {
-  border: 1px solid $foreground;
+  border: 1px solid $red;
   height: 40rem;
-  padding: 0.5rem;
+  background-color: $white;
 }
 </style>
