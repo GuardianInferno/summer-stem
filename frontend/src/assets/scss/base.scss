@@ -1,4 +1,10 @@
 html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+html,
 body,
 * {
   box-sizing: border-box;
@@ -10,11 +16,9 @@ body {
   min-height: 100vh;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: "Verdana",
-    "Arial",
-    "Helvetica",
-    sans-serif;
-  font-size: 15px;
+  font-family: "Cascadia Code", monospace;
+  background-color: #111;
+  color: white;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
