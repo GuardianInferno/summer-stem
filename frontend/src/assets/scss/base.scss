@@ -17,8 +17,8 @@ body {
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: "Cascadia Code", monospace;
-  background-color: #111;
-  color: white;
+  background-color: $background;
+  color: $foreground;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
