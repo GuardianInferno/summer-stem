@@ -7,8 +7,6 @@
 <style lang="scss" scoped>
 .money-box {
   @include border;
-  padding: 1rem;
-  margin-bottom: 1rem;
   .money-count {
     font-size: 5rem;
   }
