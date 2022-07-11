@@ -1,6 +1,9 @@
+<script setup>
+</script>
+
 <template>
   <div class="settings">
-    Log Out
+    <RouterLink to="/login">Login</RouterLink>
   </div>
 </template>
 
