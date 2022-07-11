@@ -1,7 +1,7 @@
 <template>
 <div class="page-wrapper">
   <div class="form-wrapper">
-    <h3>Login</h3>
+    <h3>Signup</h3>
     <form @submit.prevent="handleSubmit" class="block-container">
       <div class="block-body">
         <dl class="form-row">
@@ -12,6 +12,16 @@
           </dt>
           <dd>
             <input class="input" type="username" name="username" v-model="username" required />
+          </dd>
+        </dl>
+        <dl class="form-row">
+          <dt>
+            <div class="label-wrapper">
+              <label for="email">Email:</label>
+            </div>
+          </dt>
+          <dd>
+            <input class="input" type="email" name="email" v-model="email" />
           </dd>
         </dl>
         <dl class="form-row">
@@ -48,6 +58,7 @@ export default {
   setup() {
     const username = ref("")
     const password = ref("")
+    const email = ref("")
     const error = ref(null)
     const router = useRouter()
     const store = useUserStore()
@@ -60,7 +71,7 @@ export default {
       }
     }
     return {
-      handleSubmit, username, password, error
+      handleSubmit, username, password, email, error
     }
   }
 }
