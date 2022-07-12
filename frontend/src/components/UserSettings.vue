@@ -6,6 +6,8 @@ import { useUserStore } from '../stores/user';
   <div class="settings">
     <RouterLink to="/login">Login</RouterLink>
     <RouterLink to="/signup">Signup</RouterLink>
+    <a v-if="useUserStore().user" @click="useUserStore().logout()">Log Out</a>
+    <span v-if="useUserStore().user">Logged in as: {{useUserStore.user}}</span>
   </div>
 </template>
 
@@ -15,6 +17,14 @@ import { useUserStore } from '../stores/user';
   a {
     color: $foreground;
     text-decoration: none;
+    margin-right: 1rem;
+    &:hover {
+      color: wheat;
+      cursor: pointer;
+    }
+  }
+  span {
+    float: right;
   }
 }
 </style>

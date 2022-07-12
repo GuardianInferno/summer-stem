@@ -34,5 +34,8 @@ export const useUserStore = defineStore({
           this.login(username, password);
         });
     },
+    async logout() {
+      alert("Non Functional")
+    },
   },
 });
